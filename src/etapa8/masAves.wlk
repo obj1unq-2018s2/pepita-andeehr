@@ -12,7 +12,7 @@ object pepon {
 	method energia() {return energia}
 	method puedeVolar(unosKms) {
 		return energia >= 1 + unosKms * 0.5
-	}	 // No se si es necesario, lo puse para ver el comportamiento
+	}	 
 }
 
 // implementar el objeto entero, salvo haceLoQueQuieras que lo damos hecho
