@@ -13,5 +13,9 @@ object roque {
 		aveAEntrenar.comer(alpiste, 300)
 		aveAEntrenar.volar(5)
 		aveAEntrenar.haceLoQueQuieras()
-	}  // implementar
+	}
+	method pupiloActual(){
+		return aveAEntrenar
+	}
+
 }
