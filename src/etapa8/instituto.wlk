@@ -27,10 +27,9 @@ object instituto {
 		}
 	}
 	method mejoresEstudiantes(){
-	//Ver porque hace BOOM
 		var estudiantes = []
 		entrenadores.forEach{entrenador => 
-			estudiantes += entrenador.mejorEstudiante()
+			estudiantes += [entrenador.mejorEstudiante()]
 			}
 		return estudiantes
 		}
