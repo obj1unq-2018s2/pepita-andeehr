@@ -9,7 +9,9 @@ object roque {
 	var aveAEntrenar
 	var avesAEntrenar = []
 	method agregarPupilo(unAve) {
-		avesAEntrenar.add(unAve)
+		if (not avesAEntrenar.contains(unAve)){
+			avesAEntrenar.add(unAve)		
+		}
 	}
 	method aves(){
 		return avesAEntrenar
@@ -23,7 +25,8 @@ object roque {
 			unAve => unAve.puedeVolar(unosKms)
 		})
 	}
-	method tuPupiloEs(ave) { aveAEntrenar = ave } // implementar
+	method tuPupiloEs(ave) { aveAEntrenar = ave }
+	
 	method entrenar() {
 		avesAEntrenar.forEach{ unAve => 
 			unAve.volar(10)

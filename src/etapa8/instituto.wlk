@@ -8,7 +8,9 @@ import susana.*
 object instituto { 
 	var entrenadores = []
 	method contratar(entrenador){
-		entrenadores.add(entrenador)
+		if (not entrenadores.contains(entrenador)){
+			entrenadores.add(entrenador)
+		}
 	}
 	method prescindir(entrenador){
 		entrenadores.remove(entrenador)
@@ -25,9 +27,11 @@ object instituto {
 		}
 	}
 	method mejoresEstudiantes(){
-	//No devuelve nada, tengo que corregir este metodo todavia
-		entrenadores.forEach{entrenador =>
-			entrenador.mejorEstudiante()
+	//Ver porque hace BOOM
+		var estudiantes = []
+		entrenadores.forEach{entrenador => 
+			estudiantes += entrenador.mejorEstudiante()
 			}
+		return estudiantes
 		}
 }

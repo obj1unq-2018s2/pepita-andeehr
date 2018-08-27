@@ -17,7 +17,7 @@ object susana {
 		return aveAEntrenar
 	}
 	method estaContento(){
-		aveAEntrenar.puedeVolar(5)
+		return aveAEntrenar.puedeVolar(5)
 	}
 	method mejorEstudiante(){
 		return [aveAEntrenar]
