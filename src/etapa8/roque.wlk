@@ -35,4 +35,13 @@ object roque {
 	method pupiloActual(){
 		return aveAEntrenar
 	}
+	method estaContento(){
+		return avesAEntrenar.size().between(1, 8)
+	}
+	method mejorEstudiante(){
+		return
+		avesAEntrenar.find({unAve=>
+			unAve.puedeVolar(10)
+		})
+	}
 }

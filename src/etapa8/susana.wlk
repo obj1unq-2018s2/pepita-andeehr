@@ -16,4 +16,10 @@ object susana {
 	method pupiloActual(){
 		return aveAEntrenar
 	}
+	method estaContento(){
+		aveAEntrenar.puedeVolar(5)
+	}
+	method mejorEstudiante(){
+		return [aveAEntrenar]
+	}
 }  // implementar
