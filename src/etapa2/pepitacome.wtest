@@ -8,3 +8,15 @@ test "pepita come alpiste y mondongo" {
 	pepita.comer(mondongo, 50)
 	assert.equals(5400, pepita.energia())
 }
+
+test "pepita esta debil" {
+	// No me parece efectivo este test, quizas con un foreach [0,50] tenga sentido?
+	assert.that(pepita.estaDebil())
+	pepita.modificarEnergia(49)
+	assert.that(pepita.estaDebil())	
+}
+
+test "pepita cuanto quiere volar"{
+	pepita.comer(alpiste, 85)
+	assert.equals(93, pepita.cuantoQuiereVolar())
+}

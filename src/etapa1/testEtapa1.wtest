@@ -1,0 +1,18 @@
+import pepita.*
+
+describe "Test pepita, etapa 1"{
+
+	test "Pepita come" {	
+		pepita.comer(1)
+		assert.equals(4, pepita.energia())
+	}
+	
+	test "Pepita vuela" {
+		pepita.volar(1)
+		assert.equals(-11, pepita.energia())
+	}
+	
+	test "Pepita energia inicial" {
+		assert.equals(0, pepita.energia())
+	}
+}
