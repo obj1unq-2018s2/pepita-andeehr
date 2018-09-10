@@ -40,7 +40,7 @@ object pepita {
 		else if (self.estaFeliz()) {
 			self.volar(8)
 		} else {
-			
+			// TODO Esto bien podría no estar.
 		}
 	}
 	method modificarEnergia(valor){

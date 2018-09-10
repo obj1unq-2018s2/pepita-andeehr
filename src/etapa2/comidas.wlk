@@ -27,6 +27,8 @@ object sorgo {
 }
 
 // despues, agregar mijo y canelones
+// TODO Esta estrategia de guardar el resultado en lugar de saber si está mojado es frágil
+// Y va a traer problemas en ejercicios más complejos, evitala.
 object mijo {
 	var resultado = 0
 	method mojarse(){
@@ -38,6 +40,8 @@ object mijo {
 	method energiaPorGramo() {return resultado}
 }
 
+// TODO Nuevamente, la estrategia de "precalcular" el resultado, aquí claramente falla.
+// Desafío: encontrar cómo hacer que se rompa.
 object canelones {
 	var joules = 20
 	method ponerQueso() {

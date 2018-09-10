@@ -39,6 +39,8 @@ object noroeste {
 }
 
 object estacion {
+	// TODO Ojo con el nombre de variable "temporada = false" no me ayuda a entender si es temporada baja o alta.
+	// Si se llamara temporadaAlta, o temporadaBaja, sería más claro.
 	var temporada=false
 	method cambiarTemporada(){
 		temporada = not temporada
